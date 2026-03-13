@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout_Code') {
             steps {
-                git 'https://github.com/jatinR14/ci-pipeline-demo.git'
+                git branch: 'main', url: 'https://github.com/jatinR14/ci-pipeline-demo.git'
             }
         }
 
